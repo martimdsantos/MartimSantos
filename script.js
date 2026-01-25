@@ -17,7 +17,7 @@
     function initScrollAnimations() {
         // Seleciona todos os elementos que devem ser animados
         const animatedElements = document.querySelectorAll(
-            '.section-title, .about-content, .project-card, .skill-category'
+            '.section-title, .about-content, .project-card, .skills-container'
         );
 
         // Adiciona a classe base de animação
