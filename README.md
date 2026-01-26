@@ -1,3 +1,3 @@
 # SitePessoal
 
-Fazer npx serve para começar
+Fazer "npx serve" para começar
