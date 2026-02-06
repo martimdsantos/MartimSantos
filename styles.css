@@ -680,6 +680,72 @@ body {
 }
 
 /* ==========================================
+   CV SECTION
+   ========================================== */
+.cv-container {
+    text-align: center;
+}
+
+.cv-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    clip-path: polygon(
+        0 0,
+        calc(100% - 20px) 0,
+        100% 20px,
+        100% 100%,
+        20px 100%,
+        0 calc(100% - 20px)
+    );
+    transition: all var(--transition-normal);
+}
+
+.cv-content:hover {
+    border-color: var(--accent-primary);
+    box-shadow:
+        0 0 30px var(--accent-dim),
+        inset 0 0 30px var(--accent-dim);
+}
+
+.cv-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--bg-primary);
+    background: var(--accent-primary);
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    clip-path: polygon(15px 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+    transition: all var(--transition-fast);
+}
+
+.cv-download-btn:hover {
+    background: var(--text-primary);
+    box-shadow: 0 0 30px var(--accent-glow);
+    transform: scale(1.05);
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+}
+
+/* ==========================================
    FOOTER
    ========================================== */
 .footer {
